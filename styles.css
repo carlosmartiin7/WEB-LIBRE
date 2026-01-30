@@ -1,0 +1,384 @@
+:root {
+    --madrid-blue: #003366;
+    --madrid-gold: #FEBE10;
+    --white: #ffffff;
+    --bg-grey: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0a3d91, #1e5fd1);
+    color: #0a2e6a;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--white);
+}
+
+.logo img {
+    height: 44px;
+}
+
+.signo.adidas img {
+    height: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--madrid-blue);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.hero {
+    height: 70vh;
+    background-color: var(--madrid-blue);
+    display: flex;
+    align-items: flex-end;
+    padding: 5% 8%;
+    color: var(--white);
+}
+
+.hero-content .tag {
+    font-size: 0.9rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin: 10px 0 25px 0;
+}
+
+.btn-yellow {
+    display: inline-block;
+    background-color: var(--madrid-gold);
+    color: var(--white);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.btn-azul-link {
+    display: inline-block;
+    margin-left: 20px;
+    color: var(--madrid-blue);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    font-weight: 800;
+    color: var(--madrid-blue);
+}
+
+.titulos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.titulo-card {
+    text-align: center;
+}
+
+.titulo-card img {
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.titulo-card p {
+    font-weight: 600;
+}
+
+.titulo-card span {
+    color: var(--madrid-gold);
+    font-weight: 800;
+}
+
+.Santiago-Bernabeu {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1540741282121-6a05ed50bfd4?auto=format&fit=crop&q=80&w=1200') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Santiago-Bernabeu .bernabeu-overlay h2,
+.Santiago-Bernabeu .bernabeu-overlay p {
+    color: var(--white);
+}
+
+.cuotas-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.cuota-item {
+    padding: 30px;
+    border: 1px solid #ddd;
+    text-align: center;
+    min-width: 200px;
+}
+
+.cuota-item.destacado {
+    background-color: var(--madrid-blue);
+    color: white;
+    border: none;
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: white;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.producto h2 {
+    font-size: 18px;
+    margin: 15px 0 10px 0;
+}
+
+.precio {
+    font-size: 20px;
+    color: #c89b3c;
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--madrid-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+button:hover {
+    background-color: #c89b3c;
+    color: black;
+    transform: scale(1.05);
+}
+
+.contenedor {
+    width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0a3d91;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0a3d91;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #0a3d91;
+    font-size: 14px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #1e5fd1;
+    box-shadow: 0 0 6px rgba(30, 95, 209, 0.5);
+    outline: none;
+}
+
+.metodos-pago {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e6efff;
+    border-radius: 8px;
+    border: 1px solid #0a3d91;
+}
+
+.metodos-pago h3 {
+    margin-top: 0;
+    color: #0a3d91;
+}
+
+.metodos-pago label {
+    font-weight: normal;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #0a3d91;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+.boton {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.boton button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0a3d91;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton button:hover {
+    background-color: #1e5fd1;
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.match-list {
+    list-style: none;
+    padding: 0;
+}
+
+.match-list li {
+    padding: 12px 14px;
+    border-bottom: 1px solid #d0d6e8;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.match-list li:hover {
+    background: #e8efff;
+}
+
+.match-list .date {
+    font-weight: bold;
+    color: #0a3d91;
+    margin-right: 10px;
+}
+
+.campo {
+    position: relative;
+    width: 700px;
+    height: 1000px;
+    margin: 0 auto 40px auto;
+    background: linear-gradient(#2e8b57, #3cb371);
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.jugador {
+    position: absolute;
+    width: 110px;
+    background-color: white;
+    color: #0a3d91;
+    border-radius: 15px;
+    padding: 8px 5px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+.jugador img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0a3d91;
+    margin-bottom: 5px;
+}
+
+.jugador span {
+    font-size: 13px;
+}
+
+.portero { top: 92%; left: 50%; }
+.d1 { top: 75%; left: 15%; }
+.d2 { top: 75%; left: 38%; }
+.d3 { top: 75%; left: 62%; }
+.d4 { top: 75%; left: 85%; }
+
+.m1 { top: 55%; left: 25%; }
+.m2 { top: 55%; left: 50%; }
+.m3 { top: 55%; left: 75%; }
+
+.a1 { top: 30%; left: 20%; }
+.a2 { top: 25%; left: 50%; }
+.a3 { top: 30%; left: 80%; }
